@@ -33,9 +33,14 @@
             //}
 
 
-            Console.Write("Enter Student name for search: ");
-            string serachName = Console.ReadLine();
-            myObj.SearchStudent(serachName);
+            //Console.Write("Enter Student name for search: ");
+            //string serachName = Console.ReadLine();
+            //myObj.SearchStudent(serachName);
+
+            Console.WriteLine("Enter the Grade to Filter >= : ");
+            double filterGrade = Convert.ToDouble(Console.ReadLine()); 
+            myObj.FilterByGrade(filterGrade);
+
 
 
         }

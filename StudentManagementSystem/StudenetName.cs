@@ -66,6 +66,17 @@ namespace StudentManagementSystem
                 Console.WriteLine("No student found.");
         }
 
+        public void FilterByGrade(double minGrade)
+        {
+            Console.WriteLine($"\nStudents with grade >= {minGrade}:");
+            foreach (var student in studentGrade)
+            {
+                if (student.Value >= minGrade)
+                {
+                    Console.WriteLine($"Name: {student.Key}, Grade: {student.Value}");
+                }
+            }
+        }
 
     }
 }
